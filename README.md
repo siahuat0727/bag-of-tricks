@@ -15,7 +15,7 @@ $ cp -r bag-of-tricks/utils path/to/your/repo
 
 then slightly modify your code.
 
-Just a simple reminder here. For detail, have a look at the simple and clean demo code `main.py` instead of the hints below.
+Just a simple reminder here. For detail, please have a look at the simple and clean demo code `main.py` instead of the hints below.
 
 ### 1. Cosine learning rate
 
@@ -59,14 +59,3 @@ $ python main.py --gpu --smooth 0.1
 $ python main.py --gpu --mixup 0.3
 $ python main.py --gpu --warmup 5 --smooth 0.1 --mixup 0.3 --cosine_lr
 ```
-
-**ResNet50**
-
-cosine|warmup|label smoothing|mixup|accuracy
---|--|--|--|--
-| | | | |
-|✓| | | |
-| |✓| | |
-| | |✓| |
-| | | |✓|
-|✓|✓|✓|✓|
