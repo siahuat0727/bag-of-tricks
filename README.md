@@ -9,7 +9,7 @@ Reuse the codes in `utils/trick` and follow `main.py` to modify your code.
 For example,
 
 ```bash
-$ git clone xxx (300 epochs)
+$ git clone https://github.com/siahuat0727/bag-of-tricks
 $ cp -r bag-of-tricks/utils path/to/your/repo
 ```
 
