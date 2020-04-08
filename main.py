@@ -37,15 +37,15 @@ def parse_args():
 
     # Bag of tricks
     parser.add_argument('--smooth', type=float, default=0.0,
-                        help="eps for label smoothing")
+                        help="eps for label smoothing, 0 to disable")
     parser.add_argument('--warmup', type=int, default=0,
-                        help="warmup epoch, 0 to unable")
+                        help="warmup epoch, 0 to disable")
     parser.add_argument('--warmup_lr', type=float,
-                        default=1e-5, help="warmup epoch, 0 to unable")
+                        default=1e-5, help="initial learning rate")
     parser.add_argument('--cosine_lr', action='store_true',
                         help="whether to use cosine learning rate")
     parser.add_argument('--mixup', type=float, default=0.0,
-                        help="whether to use cosine learning rate")
+                        help="alpha for mixup training, 0 to disable")
 
     args = parser.parse_args()
 
