@@ -42,31 +42,12 @@ Aside from the code, the only thing to mention is that the accuracy shown in the
 
 cosine|warmup|label smoothing|mixup|accuracy (90 epochs)|accuracy (300 epochs)
 --|--|--|--|--|--
-| | | | |93.10|94.01
+| | | | |93.10|93.95
 |✓| | | |92.94|93.96
-| |✓| | |93.18|93.99
-| | |✓| |93.38|94.32
-| | | |✓|93.77|95.24
-|✓|✓|✓|✓|**94.63**|**95.53**
-
-==> epoch300_alltricks.out <==
-Best acc is 95.530
-
-==> epoch300_cosine.out <==
-Best acc is 93.960
-
-==> epoch300_default.out <==
-Best acc is 94.010
-
-==> epoch300_mixup.out <==
-Best acc is 95.240
-
-==> epoch300_smooth.out <==
-Best acc is 94.320
-
-==> epoch300_warmup.out <==
-Best acc is 93.990
-
+| |✓| | |93.18|93.87
+| | |✓| |93.38|94.27
+| | | |✓|93.77|95.22
+|✓|✓|✓|✓|**94.63**|**95.67**
 
 To reproduce exactly the same result:
 
