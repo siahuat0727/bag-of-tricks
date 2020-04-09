@@ -119,14 +119,12 @@ def validate(dataloader, criterion, model, epoch, best_acc, args):
 
     with torch.no_grad():
         for i, (data, target) in enumerate(dataloader):
-            if args.gpu is not None:  # TODO None?
+            if args.gpu:
                 data = data.cuda()
                 target = target.cuda()
 
-            # compute output
             output = model(data)
 
-            # measure accuracy and record loss
             acc, *_ = accuracy(output, target, topk=(1,))
             accs.update(acc[0], data.size(0))
 
