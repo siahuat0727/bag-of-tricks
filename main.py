@@ -42,7 +42,7 @@ def parse_args():
                         help="warmup epoch, 0 to disable")
     parser.add_argument('--warmup_lr', type=float,
                         default=1e-5, help="initial learning rate")
-    parser.add_argument('--cosine_lr', action='store_true',
+    parser.add_argument('--cosine', action='store_true',
                         help="whether to use cosine learning rate")
     parser.add_argument('--mixup', type=float, default=0.0,
                         help="alpha for mixup training, 0 to disable")
@@ -201,9 +201,10 @@ def main():
 
     init_lr = args.warmup_lr if args.do_warmup else args.lr
 
-    optimizer = torch.optim.SGD(model.parameters(), init_lr)
+    optimizer = torch.optim.SGD(
+        model.parameters(), init_lr, momentum=0.9, weight_decay=1e-5)
 
-    if args.cosine_lr:
+    if args.cosine:
         epochs = args.epochs - args.warmup
         scheduler = CosineAnnealingLR(
             optimizer, T_max=epochs*len(trainloader), eta_min=4e-8)
