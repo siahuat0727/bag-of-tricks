@@ -59,3 +59,5 @@ $ python main.py --gpu --smooth 0.1
 $ python main.py --gpu --mixup 0.3
 $ python main.py --gpu --warmup 5 --smooth 0.1 --mixup 0.3 --cosine
 ```
+
+Please **star** this project if you find it useful. ^.^
