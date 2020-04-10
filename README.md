@@ -40,14 +40,14 @@ Aside from the code, the only thing to mention is that the accuracy shown in the
 
 **ResNet18**
 
-cosine|warmup|label smoothing|mixup|accuracy (90 epochs)|accuracy (300 epochs)
+cosine|warmup|label smoothing|mixup|accuracy (90 epochs)|accuracy (400 epochs)
 --|--|--|--|--|--
-| | | | |93.10|93.95
-|✓| | | |92.94|93.96
-| |✓| | |93.18|93.87
-| | |✓| |93.38|94.27
-| | | |✓|93.77|95.22
-|✓|✓|✓|✓|**94.63**|**95.67**
+| | | | |93.10|94.05
+|✓| | | |92.94|94.07
+| |✓| | |93.18|93.99
+| | |✓| |93.38|94.30
+| | | |✓|93.77|95.40
+|✓|✓|✓|✓|**94.63**|**96.01**
 
 To reproduce exactly the same result:
 
